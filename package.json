@@ -1,0 +1,23 @@
+{
+  "name": "time-spent-by-user-on-website",
+  "version": "1.0.0",
+  "description": "A project that demonstrates how to get time spent by the user on a website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kalpitrathore/time-spent-by-user-on-website.git"
+  },
+  "author": "Kalpit Rathore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kalpitrathore/time-spent-by-user-on-website/issues"
+  },
+  "homepage": "https://github.com/Kalpitrathore/time-spent-by-user-on-website#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

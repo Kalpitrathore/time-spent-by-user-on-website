@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+        <style type="text/css">
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Dashboard</h2>
+        <table>
+            <tr>                
+                <th>User Id</th>
+                <th>Time Spent</th>
+            </tr>            
+                <%  
+                    var total_time_spent = 0                    
+                    for(i in analytics)
+                    {
+                        %>
+                        <tr>
+                            <td><%= i %></td>
+                            <td><%= analytics[i] %>s</td>
+                        </tr>
+                        <%
+                            total_time_spent = total_time_spent + analytics[i];
+                    }
+                %>
+                <tr>
+                    <%
+                        if(Object.keys(analytics).length>0){
+                    %>
+                        <th>Total Users: <%= Object.keys(analytics).length %></th>
+                        <th>Avg Time Spent: <%= (total_time_spent/Object.keys(analytics).length).toFixed(2) %>s</th>
+                    <%
+                        }
+                        else{
+                    %>
+                        <td>NA</td>
+                        <td>NA</td>
+                    <%
+                        }
+                    %>
+                </tr>            
+        </table>
+    </body>
+</html>
