@@ -9,7 +9,7 @@ In this article, We will be going to talk about how to get time spent by users o
 
 ## Working
 Before deep dive into the code, Let's try to understand the working behind it with the help of the below flow chart.
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l8au5m6b4peubhgsedgj.png)
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ngube2wayp2xty8asfpj.png)
 
 ## Implementation
 Let's get some hands dirty on code.
